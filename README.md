@@ -23,31 +23,7 @@ It's to build the ability to:
 
 ---
 
-## 📚 Topics I'm Learning
 
-### C++ Fundamentals
-
-* Variables & Data Types
-* Input & Output
-* Operators
-* Conditional Statements
-* Loops
-* Functions
-* Arrays
-* Strings
-* Pointers
-* References
-
-### Object-Oriented Programming
-
-* Classes & Objects
-* Constructors & Destructors
-* Encapsulation
-* Inheritance
-* Polymorphism
-* Abstraction
-
----
 
 ## 📈 Progress
 
