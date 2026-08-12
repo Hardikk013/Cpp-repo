@@ -6,7 +6,7 @@ int main () {
     cout<<"Enter The Size Of An Array : ";
     cin>>s;
 
-    int enro[s];
+    long long enro[s];
 
     cout<<"Enter Your Array Elements : ";
 
