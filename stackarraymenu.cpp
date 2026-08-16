@@ -13,6 +13,7 @@ int main(){
     cout<<"2. Delete Item (POP)"<<endl;
     cout<<"3. Last Item (STATUS)"<<endl;
     cout<<"4. Display Items"<<endl;
+    cout<<"5. Exit"<<endl;
 
     cout<<"Enter your choice : ";
     cin>>choice;
@@ -21,6 +22,11 @@ int main(){
         case 1:
             cout<<"How much element you want to push : ";
             cin>>push_element;
+
+            if (top + push_element >= 100) {
+            cout << "Stack Overflow..........";
+            break;
+            }
 
             for(i=0;i<push_element;i++){
                 top++;
@@ -37,6 +43,11 @@ int main(){
         case 2:
             cout<<"How much element you want to pop : ";
             cin>>pop_element;
+
+            if (pop_element > top + 1) {
+            cout << "Stack Underflow..........";
+            break;
+            }
 
             for(i=0;i<pop_element;i++){
                 string value = arr[top];
@@ -60,6 +71,14 @@ int main(){
             for(i=0;i<top+1;i++){
                 cout<<arr[i]<<" ";
             }
+            break;
+
+    case 5:
+            cout<<"Exiting................."<<endl;
+            break;
+
+    default:
+            cout<<"Invalid Choice..........";
             break;
     }
 }
