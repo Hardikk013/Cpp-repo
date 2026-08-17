@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
-int main(){
-    string Language[] = {"C","C++","JAVA","Data Structure","Python"};
 
-    int size = sizeof(Language);
+int main() {
+    string Language[] = {"C", "C++", "JAVA", "Data Structure", "Python"};
 
-   for(int i = 0; i <= size; i++) {
-    cout << "Element at index " << i << " : " << Language[i] << "\n";
-}
 
+    int size = sizeof(Language) / sizeof(Language[0]);
+
+
+    for (int i = 0; i < size; i++) {
+        cout << "Element at index " << i << " : " << Language[i] << "\n";
+    }
 }
